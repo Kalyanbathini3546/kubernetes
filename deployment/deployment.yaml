@@ -24,6 +24,6 @@ spec:
     spec:
       containers:
         - name: fbcont
-          image: kalyan3546/class5:python_app
+          image: kalyan3546/class7:multistage
           ports:
             - containerPort: 8080
