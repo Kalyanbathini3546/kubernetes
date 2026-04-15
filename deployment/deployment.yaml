@@ -1,29 +1,26 @@
+
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fbmeta
-  namespace: dev
+  name: metafb
   labels:
-    app: fbapp
-    env: dev
+    app: fb
 spec:
   selector:
     matchLabels:
       app: fb
-      env: dev
   replicas: 2
   strategy:
     type: RollingUpdate
     rollingUpdate:
-      maxSurge: 1
       maxUnavailable: 0
+      maxSurge: 1
   template:
     metadata:
       labels:
         app: fb
-        env: dev
-        version: V1_AC
+        version: v1_AC
     spec:
       containers:
         - name: fbcont
