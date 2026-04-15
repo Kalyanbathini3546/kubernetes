@@ -9,7 +9,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: fb
+      app: facebook
   replicas: 2
   strategy:
     type: RollingUpdate
@@ -19,7 +19,7 @@ spec:
   template:
     metadata:
       labels:
-        app: fb
+        app: facebook
         version: v1_AC
     spec:
       containers:
