@@ -4,7 +4,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: metafb
-  namespace: kalyanns
   labels:
     app: fb
 spec:
